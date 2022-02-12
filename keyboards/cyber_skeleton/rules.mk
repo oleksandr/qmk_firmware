@@ -18,5 +18,11 @@ RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
 AUDIO_ENABLE = no           # Audio output
 
 SPLIT_KEYBOARD = yes
+POINTING_DEVICE_ENABLE = yes
+COMBO_ENABLE = no
 
 AUTO_SHIFT_ENABLE = yes # Auto Shift
+
+SRC += spi_master.c
+SRC += adns/adns.c
+SRC += pmw/pmw.c
