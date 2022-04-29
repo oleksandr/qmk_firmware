@@ -23,8 +23,13 @@
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
+/*
 #define MATRIX_ROW_PINS { F7, B1, B3, B2 }
 #define MATRIX_COL_PINS { C6, D7, E6, B4, B5 }
+*/
+#define MATRIX_ROW_PINS { D4, C6, D7, E6 }
+#define MATRIX_COL_PINS { B2, B3, B1, F7, F6 }
+
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL */
@@ -140,3 +145,5 @@
 #define MOUSEKEY_MAX_SPEED      6
 #undef MOUSEKEY_TIME_TO_MAX
 #define MOUSEKEY_TIME_TO_MAX    64
+
+#define UNICODE_SELECTED_MODES UC_MAC, UC_LNX, UC_WINC
